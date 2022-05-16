@@ -9,19 +9,10 @@ class Application extends StatelessWidget {
   TextEditingController _binaryController = TextEditingController();
 
   void _returnDecimal() {
-    num decimal = 0;
-    num weight = 1;
     num binary = num.parse(_binaryController.text);
-    num remainder;
     print('Binary Value Transferred ${binary}');
-    while (binary != 0) {
-      remainder = binary % 10;
-      decimal = decimal + remainder * weight;
-      weight = weight * 2;
-      binary = binary / 10;
-    }
-    print('Decimal Value is ${binary}');
-    // print('Decimal Value is ${_binaryController.text}');
+    int decimalNumber = int.parse(_binaryController.text, radix: 2);
+    print('Output for Decimal is ${decimalNumber}');
   }
 
   @override
