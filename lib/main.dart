@@ -41,10 +41,6 @@ class Application extends StatelessWidget {
                     ],
                   ),
                 ),
-                // new ElevatedButton(
-                //   child: Text("Convert"),
-                //   onPressed: _returnDecimal,
-                // ),
               ],
             ),
           ),
